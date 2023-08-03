@@ -5,7 +5,7 @@ The goal of this project is to build a datalake on S3 with medallion architectur
 ![image](https://github.com/ivangprado/ETL_orchestration-Medallion_datalake/assets/6001254/d4176093-5d55-490a-ab09-4ed9512ebaf8)
 
 
-#Steps
+# Steps
 
 1. Create the bucket in S3 for the data lake. This bucket will have the prefixes: raw, bronze and silver.
 2. Create the lambdas that make the API calls. The information obtained is transformed into a Pandas dataframe and saved in parquet format into the S3 bucket ("raw" prefix).
